@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+    outline: none;
+    /* tirar a linha em volta das coisas */
+
+}
+
+html{
+    height: 100vh; /* criar rolagem */
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto; /* centraliza no meio da tela */
+}
+
+.flex{
+    display: flex;
+    align-items: center; /* fica alinhado */
+    justify-content: space-between; /*garante que os elemntos ficam divididos nas extreminades, como sao 3 elementos ele fica distribuidos certinho*/
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%; /* os 60 é para o teto e os 4 sao para as laterias*/
+    position: fixed;
+    top: 0; /*fixed;). Ela especifica a distância entre o topo do elemento e o topo do seu ancestral posicionado mais próximo*/
+    left: 0; /*left é utilizada para definir a posição horizontal de um elemento, especificamente, a distância da sua borda esquerda em relação ao elemento pai (se o posicionamento for relativo) ou a borda da página (se o posicionamento for absoluto).*/
+    transition: 1s;
+}
+
+header.rolagem{
+    background-color: white;
+    padding: 20px 4%;
+}
+
+header.rolagem a{
+    color: #ffae81;
+}
+
+header img{
+    font-size: 30px;
+    color: white;
+    width: 110px;
+}
+
+header ul {
+    list-style-type: none; /* tirar as bolinhas que fica do lado no ul*/
+}
+
+header ul li{
+    display: inline-block; /* para deixar um do lado do outro na li */
+    margin: 0 40px;
+}
+
+header ul li a{
+    
+    color: white;
+        text-decoration: none; /*tiras as bordas do link "a"*/
+}
+
+.banner{
+    background-image: url(./emagrecimento.jpg);/*imagem de fundo*/
+    background-position: center;
+    background-repeat: no-repeat; /* para nao repetir*/
+    background-size: cover; /*para cobrir todo espaço */
+    height: 100vh; /* toma todo tamanho da tela */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size:4em; /*significa que o tamanho da fonte será 4 vezes o tamanho da fonte do elemento pai*/
+}
+
+.banner h1 span{
+    color: black; /* a cor do span */
+
+}
+
+.contato button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #ffae81;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.meu-rodape{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    
+}
+
+.centro{
+    color: #ffae81;
+    
+}
+
+.shopping{
+    color: #ffae81;
+}
+
+a {
+    text-decoration: none; /* Remove sublinhado por padrão */
+    cursor: pointer;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  }
+
+
